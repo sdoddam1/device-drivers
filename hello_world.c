@@ -5,7 +5,7 @@ MODULE_LICENSE("Dual BSD/GPL");
 // To compile this kernel module: make
 // To insert this kernel module: sudo insmod hello_world.ko
 // To remove this kernel module: sudo rmmod hello_world
-// To check the log messages "Hello, world! or Goodbye, cruel world": dmesg or sudo tail -f /valog/kern.log
+// To check the log messages "Hello, world! or Goodbye, cruel world": dmesg or tail -f /valog/kern.log
 
 static int hello_init(void)		// function invoked on kernel module insertion 
 {
