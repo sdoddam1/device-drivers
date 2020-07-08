@@ -1,4 +1,4 @@
-obj-m := hello_world.o		# module to be built from hello_world.o
+obj-m := hello_world.o	hellop.o	# module to be built from hello_world.o
 
 # symbolic link /lib/modules/$(shell uname -r)/build points to the running linux kernel source tree 
 # -C option changes the directory
