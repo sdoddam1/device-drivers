@@ -8,7 +8,7 @@
 
 static int __init hello_init(void)		// function invoked on kernel module insertion 
 {
-	printk(KERN_INFO"Hello, world!\n");	// printk -- function defined and exported by kernel
+	printk(KERN_INFO"Hello, world!\n");	// printk() -- function defined and exported by kernel
 	return 0;
 }
 
@@ -17,8 +17,8 @@ static void __exit hello_exit(void)	// function invoked on kernel module removal
 	printk(KERN_INFO"Goodbye, cruel world\n");	// KERN_INFO -- priority of the log message
 }
 
-module_init(hello_init);		// kernel macro indicates function invoked on module insertion
-module_exit(hello_exit)			// kernel macro indicates function invoked on module removal
+module_init(hello_init);		// kernel macro declares function invoked on module insertion
+module_exit(hello_exit)			// kernel macro declares function invoked on module removal
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Simple hello world module");
