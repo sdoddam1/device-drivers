@@ -36,4 +36,4 @@ module_exit(hello_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Spoorti Doddamani");
-MODULE_DESCRIPTION("Hello world module with parameters");
+MODULE_DESCRIPTION("Kernel module with parameters");
